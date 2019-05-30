@@ -1,0 +1,132 @@
+@charset utf-8
+/*Swati Tamrakar */
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+	margin-top: 4%;
+	display:-webkit-flex;
+display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;
+	
+}
+footer
+{
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+main {
+    display: block;
+	float: left;
+	height:50%;
+	margin-right: 10%;
+	margin-left: 20%;
+    padding: 1em;
+    background: white;
+    border: 3px solid red;
+	
+	-webkit-flex: 3 2 250px;
+	flex: 3 2 250px;
+}
+h1 {
+    margin-top: 0;
+    color: navy;
+}
+label {
+    width: 10em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .75em;
+}
+#data input {
+    float: left;
+    width: 15em;
+    margin-bottom: .5em;
+}
+#data span {
+    padding-left: .25em;
+}
+#buttons input {
+    float: left;
+    margin-bottom: .5em;
+}
+br {
+    clear: left;
+}
+nav.hBar
+{
+	width:100%;
+}
+nav.hBar
+{
+	background-color: black;
+}
+nav ul 
+{
+	list-style-type: none;
+	margin:0;
+	text-align: center;
+	display:-webkit-flex;
+	display: flex;
+	-webkit-flex-flow: no wrap;
+	flex-flow: no wrap;
+	
+	overflow: hidden;
+}
+nav li 
+{
+	display: inline;
+	padding-left: 60px;
+	padding-right:50px;
+	
+}
+nav li a 
+{
+	text-decoration: none;
+	display: block;
+	    text-align: left;
+    padding: 10px 50px;
+	color: white;
+}
+a#icon
+{
+	display: none;
+}
+aside img
+{
+display:-webkit-flex;
+display: flex;
+-webkit-flex: 2 1 200px;
+flex: 2 1 200px;
+width: 20%;	
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+} 
+
+@media only screen and (max-width:480px)
+{
+	aside img.money
+{
+	display:none;
+}
+	a#icon
+	{
+		display: block;
+		width: 20%;
+	}
+	nav.hBar ul{
+		display: none;
+		
+	}
+	a#icon:hover+ul, nav.hBar ul:hover
+	{
+		display: block;
+	}
+
+}

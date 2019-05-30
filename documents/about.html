@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Swati Tamrakar</title>
+<meta charset= "utf-8">
+<!-- keywords and hotspot-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href = "../styles/aboutpage_layout.css" rel ="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Yatra One' rel='stylesheet'>
+<h1><b>Swati Tamrakar</b></h1>
+</head>
+<body>
+<header>
+
+<nav class ="links">
+<ul>
+<li><a href = "../index.html">Home</a></li>
+<li><a href = "about.html">About me</a></li>
+<li><a href = "goalspage.html">Goals</a></li>
+
+</ul>
+</nav>
+</header>
+
+<aside>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="../images/me6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="../images/me1.jpg" style="width:100%">
+  <div class="text"><b>Dallas Aquarium</b></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="../images/me3.jpg" style="width:100%">
+  <div class="text"><b>Little Elm Beach</b></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="../images/me4.jpg" style="width:100%">
+  <div class="text"><b>Cultural Extravaganza</b></div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="../images/award.jpg" style="width:100%">
+  <div class="text">Club of the Year 2018-2019</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<br>
+
+</aside>
+<section>
+<blockquote>
+<p><b>
+ Hello and Namaste!<br> I am Swati Tamrakar, currently pursuing a degree in IT/MIS with a minor in Mathematics. I was born and raised in Kathmandu, the capital city of Nepal and came to the USA in 2015.<!-- I was initially just an IT major but I decided on becoming a math minor since IT and maths go hand in hand.
+Similarly, I was always keen in learning about businesses and how they work and I was more than delighted to find out that I could do MIS and IT together. --><br>
+I am a problem solver and have been tutoring Mathematics for the past 3 years. My students have regarded me as patient and perseverant. The experience as a tutor has humbled me as well as helped improve my communication skills. As an executive board member of the MultiCultural Leadership Organization and STEM Club, I have been able to enhance both my leadership and teamwork skills. 
+Since technology changes constantly, it is important to be able to learn and adapt with it quickly. Being an avid learner, I am determined to put my best effort in all that I do. 
+</b></p>
+</blockquote>
+</section>
+
+</body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3.5 seconds
+}
+</script>
+
+ <footer>
+ <h3><u>Contact</u></h3> 
+ Swati Tamrakar<br> tamrakar407698@newmanu.edu <br>Linkedin:  <a href ="https://www.linkedin.com/in/swati-tamrakar/">swati-tamrakar</a>
+ <br><br>
+ </footer>
+</html>

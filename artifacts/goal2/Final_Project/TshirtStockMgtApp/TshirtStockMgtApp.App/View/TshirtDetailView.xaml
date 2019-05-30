@@ -1,0 +1,70 @@
+﻿<Window x:Class="TshirtStockMgtApp.App.View.TshirtDetailView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TshirtStockMgtApp.App.View"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource mainViewModelLocator}, Path=TshirtDetailViewModel}"
+        Title="TshirtDetailView" Height="431.2" Width="1042.15">
+    <ScrollViewer>
+        <Grid Margin="0" Height="403" Background="Lavender">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Name="lblTshirtName" Content="{Binding ShortDescription}" Grid.ColumnSpan="2" FontSize="40" FontWeight="Bold"></Label>
+
+            <Image Name="imgTshirt" Grid.Column="2" Source="{Binding SelectedTshirt.Image, Converter={StaticResource localImageConverter}}"
+                   Grid.RowSpan ="10" MaxHeight="150" MaxWidth="150"></Image>
+            <Label Grid.Row="1" Content="Tshirt Id" Style="{StaticResource styleLabel}"/>
+            <Label Grid.Row="2" Content="Name" Style="{StaticResource styleLabel}" VerticalAlignment="Center"/>
+            <Label Grid.Row="3" Content="Long Description" Style="{StaticResource styleLabel}"/>
+            <Label Grid.Row="4" Content="Size" Style="{StaticResource styleLabel}"/>
+            <Label Grid.Row="5" Content="Color" Style="{StaticResource styleLabel}"/>
+            <Label Grid.Row="6" Content="Unit Price" Style="{StaticResource styleLabel}" Grid.RowSpan="2"/>
+            <Label Grid.Row="7" Content="Stock on Hand" Style="{StaticResource styleLabel}"/>
+
+            <TextBox Background="Bisque" Grid.Row="1" Grid.Column="1" Text="{Binding  SelectedTshirt.TshirtID}" Name="txtTshirtID"></TextBox>
+            <TextBox Background="Bisque" Grid.Row="2" Grid.Column="1" Text="{Binding  SelectedTshirt.ShortDescription}" Name="txtName" AcceptsReturn="True" Height="75" Style="{StaticResource styleTextBox}"/>
+            <TextBox Background="Bisque" Grid.Row="3" Grid.Column="1" Text="{Binding SelectedTshirt.LongDescription}" TextWrapping="Wrap" Name="txtLongDesc" Style="{StaticResource styleTextBox}"/>
+            <TextBox Background="Bisque" Grid.Row="4" Grid.Column="1" Text="{Binding SelectedTshirt.Size}" TextWrapping="Wrap" Name="txtSize" Style="{StaticResource styleTextBox}"/>
+            <TextBox Background="Bisque" Grid.Row="5" Grid.Column="1" Text="{Binding SelectedTshirt.Color}" TextWrapping="Wrap" Name="txtColor" Style="{StaticResource styleTextBox}"/>
+            <TextBox Background="Bisque" Grid.Row="6" Grid.Column="1" Name="txtUnitPrice" Text="{Binding  SelectedTshirt.UnitPrice, Converter={StaticResource localPriceConverter}}" Style="{StaticResource styleTextBox}"></TextBox>
+            <TextBox Background="Bisque" Grid.Row="7" Grid.Column="1" Name="txtInStock" Text="{Binding SelectedTshirt.InStock}"/>
+
+            <StackPanel Grid.Row="10" Orientation="Horizontal" Grid.ColumnSpan="2">
+                <Button x:Name="btnSave" Margin="15,15,15,15.2" Content="Save Tshirt" FontSize="14">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <!--Invoke an action on the view model-->
+                            <i:InvokeCommandAction Command="{Binding SaveCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+                <Button x:Name="btnDelete" Margin="15,15,15,15.2" Content="Delete Tshirt" FontSize="14">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding DeleteTshirt}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+    </ScrollViewer>
+</Window>

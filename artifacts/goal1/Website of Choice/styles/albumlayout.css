@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*
+Author: Swati Tamrakar
+*/
+html
+{   
+   margin: 0px;
+   padding: 0px;
+   height: 100px;
+   background-image: url(../images/back.png);       
+}
+
+body header nav
+{
+	float:left;
+	text-align:center;
+	
+}
+
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+nav.links
+{
+	width: 100%;
+}
+nav.links li a:hover
+{
+	color: red;
+}
+nav.links li a:active
+{
+	color: purple;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}	
+body img 
+{
+	float: right;
+	width: 30px;
+	height: 40px;
+	padding-left: 30px;
+}
+body 
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  font-family:'Georgia', serif;
+  background-color: white;
+/*   max-width: 1500px;
+  min-width: 1000px; */
+  background-image: url(../images/back.png);  
+}
+body p
+{
+	 font-size: 20px;
+}
+ header, ul, nav, li, a, div
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section h1
+{
+	color: 	#993300;
+}
+section p
+{
+	font-size: 15px;
+	display: block;
+	float: left;
+	width: 25%;
+	box-shadow: rgb(51,51,51) -10px 0px 50px, rgb(51,51,51) 10px 0px 50px;
+	border-radius: 50px 20px ;
+	border: 1px solid rgb(151,151,151);
+	padding-left:10px;
+	padding-right:15px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 30px;
+	background-color: #B4A09B;
+}
+section.multiply, section.plus, section.divide
+{
+	padding-left:9%;
+	padding-right:6%;
+}
+img#plus, img#divide
+{
+	width: 65%;
+	height: 6%;
+	margin: auto;
+	padding-left:50px; 
+	padding-right: 45px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	float: center;
+	}
+img#multiply
+{
+	width: 60%;
+	height: 6%;
+	margin: auto;
+	padding-left:70px;
+	padding-right: 60px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	float: center;
+}
+div.plus
+{
+	width: 30%;
+	margin-left:0;
+	flex
+}
+div.multiply
+{
+	width: 30%;
+}
+div.divide
+{
+	width: 30%;
+}
+
+footer
+{
+	clear: both;
+	padding-top:30px;
+	text-align:center;
+	font-size: 1em;
+}
+footer ul 
+{
+	color: white;
+}
+footer ul a 
+{
+	color: white;
+}
+@media only screen and (max-width: 480px)
+{
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+section.plus p, section.divide p
+{
+	width: 60%;
+}
+section.multiply p
+{
+	width: 60%;
+}
+}
+@media only screen and (min-width: 481px)
+{
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+section.plus p, section.divide p
+{
+	width: 60%;
+}
+section.multiply p
+{
+	width: 60%;
+}
+}
+@media only screen and (min-width: 568px)
+{
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section.plus p, section.divide p
+{
+	width: 40%;
+}
+section.multiply p
+{
+	width: 40%;
+}
+}
+@media only screen and (min-width: 816px)
+{
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section.plus p, section.divide p
+{
+	width: 20%;
+}
+section.multiply p
+{
+	width: 20%;
+}
+}
+@media only screen and (min-width: 1064px)
+{
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section.plus , section.divide, section.multiply
+{
+	padding-left:10%;
+	padding-right:7%;
+	width: 100%;
+}
+}
