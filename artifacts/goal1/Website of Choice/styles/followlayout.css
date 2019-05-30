@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/*
+Author: Swati Tamrakar
+
+Website of choice
+*/
+html
+{   
+   margin: 0px;
+   padding: 0px;
+   height: 100px;
+background-image: url(../images/back.png);     
+}
+
+body header nav
+{
+	float:left;
+	text-align:center;
+	
+}
+
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section img#about
+{
+	width: 25%;
+	height: 25%;
+}
+nav.links
+{
+	width: 100%;
+}
+nav.links li a:hover
+{
+	color: red;
+}
+nav.links li a:active
+{
+	color: purple;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}	
+body 
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  font-family:'Georgia', serif;
+  background-color: white;
+  background-image: url(../images/back.png); 
+}
+body p
+{
+	 font-size: 18px;
+	 padding-left:25px;
+	 padding-top: 20px;
+	 background-image: url(../images/back.png);  
+}
+ header, ul, nav, li, a
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section h1
+{
+	color: 	#993300;
+}
+section
+{
+	font-size: 14px;
+	display: block;
+	float: left;
+	width: 100%;
+
+}
+body img 
+{
+	float: right;
+	width: 30px;
+	height: 40px;
+	padding-left: 30px;
+}
+
+footer
+{
+	clear: both;
+	padding-top:30px;
+	text-align:center;
+	font-size: 1em;
+}
+footer ul 
+{
+	color: white;
+}
+footer ul a 
+{
+	color: white;
+}
+div
+{
+	margin-left: 14%;
+	margin-top: 40px;
+	
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+   border-radius: 50px;
+   margin-right: 5%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 40%;
+  height: 30%;
+}
+
+.fa-twitter {
+  background: #558759;
+  color: white;
+  width: 40%;
+  height: 30%;
+   
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  width: 40%;
+  height: 30%;
+}
+
+.fa-instagram {
+  background: #125855;
+  color: white;
+  width: 40%;
+  height: 30%;
+}
+@media only screen and (max-width: 480px)
+{
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+}
+@media only screen and (min-width: 481px)
+{
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+}
+@media only screen and (min-width: 769px)
+{
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+}

@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*
+Author: Swati Tamrakar
+
+Website of choice
+*/
+html
+{   
+   margin: 0px;
+   padding: 0px;
+   height: 100px;
+background-image: url(../images/back.png);   
+}
+
+body header nav
+{
+	float:left;
+	text-align:center;
+	
+}
+
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section img#about
+{
+	width: 25%;
+	height: 25%;
+}
+nav.links
+{
+	width: 100%;
+	  margin: 0;
+    padding: 0;
+}
+nav.links li a:hover
+{
+	color: red;
+}
+nav.links li a:active
+{
+	color: purple;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}	
+body 
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  font-family:'Georgia', serif;
+  /* background-color: gray; */
+}
+body p
+{
+	 font-size: 18px;
+	 margin-right:70px;
+	 margin-left:45px;
+	 
+
+}
+ header, ul, nav, li, a
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section h1
+{
+	color: 	#993300;
+	font-variant: small-caps;
+	padding-left:40px;
+}
+
+section
+{
+	font-size: 14px;
+	display: block;
+	float: left;
+	width: 100%;
+	
+}
+body img 
+{
+	float: right;
+	width: 30px;
+	height: 40px;
+	padding-left: 100px;
+}
+
+img#plus, img#multiply, img#divide
+{
+	width: 15%;
+	height: 20%;
+	margin: auto;
+	padding-left:45px;
+	padding-right: 40px;
+	padding-top: 25px;
+	float: left;
+}
+
+footer
+{
+	clear: both;
+	padding-top:30px;
+	text-align:center;
+	font-size: 1em;
+	height:100%;
+}
+footer ul 
+{
+	color: white;
+	margin: 0;
+}
+footer ul a 
+{
+	color: white;
+}
+ .tooltip {
+    position: relative;
+    display: block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip*/
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+@media only screen and (max-width: 480px)
+{
+	body img 
+{
+	float: right;
+	width: 30px;
+	height: 40px;
+	padding-left: 10px;
+}
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+img#plus, img#multiply, img#divide
+{
+	width: 15%;
+	height: 20%;
+	margin: auto;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	float: left;
+}
+}
+@media only screen and (min-width: 481px)
+{
+	body img 
+{
+	float: right;
+	width: 50%;
+	height: 40%;
+	padding-left: 10px;
+}
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+img#plus, img#multiply, img#divide
+{
+	width: 15%;
+	height: 20%;
+	margin: auto;
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	float: left;
+}
+}
+@media only screen and (min-width: 769px)
+{
+	body img 
+{
+	float: right;
+	width: 30px;
+	height: 40px;
+	padding-left: 100px;
+}
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+img#plus, img#multiply, img#divide
+{
+	width: 15%;
+	height: 20%;
+	margin: auto;
+	padding-left:45px;
+	padding-right: 40px;
+	padding-top: 25px;
+	float: left;
+}
+}

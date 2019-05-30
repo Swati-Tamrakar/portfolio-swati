@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*
+Author: Swati Tamrakar
+
+Website of choice
+*/
+html
+{   
+   margin: 0px;
+   padding: 0px;
+   height: 100px;   
+   background-image: url(../images/back.png);  
+}
+
+body header nav
+{
+	float:left;
+	text-align:center;
+	
+}
+
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+section img#about
+{
+	width: 25%;
+	height: 25%;
+}
+nav.links
+{
+	width: 100%;
+}
+nav.links li a:hover
+{
+	color: red;
+}
+nav.links li a:active
+{
+	color: purple;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}	
+body 
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  font-family:'Georgia', serif;
+  background-color: white;
+  background-image: url(../images/back.png);  
+}
+body p
+{
+	 font-size: 18px;
+	 padding-left:25px;
+	 padding-top: 25px;
+}
+ header, ul, nav, li, a
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section h1
+{
+	color: 	#993300;
+}
+section
+{
+	font-size: 14px;
+	display: block;
+	float: left;
+	width: 100%;
+}
+body img 
+{
+	display: block;
+}
+
+footer
+{
+	clear: both;
+	padding-top:30px;
+	text-align:center;
+	font-size: 1em;
+}
+footer ul 
+{
+	color: white;
+}
+footer ul a 
+{
+	color: white;
+}
+
+/* Slideshow container */
+.slideshow_container {
+  max-width: 700px;
+  position: relative;
+  margin:auto;    
+}
+.slideshow_container:hover .down {
+  opacity: 1;
+}
+.image {
+  opacity: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.down {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.slideshow_container:hover .image {
+  opacity: 0.3;
+}
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  float: right;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: b;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: auto;
+  text-align: center;
+  background-color: #DBCDC9;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 480px)
+{
+body header img
+{
+	width: 100%;
+	height: 20%;
+}
+}
+@media only screen and (min-width: 481px)
+{
+body header img
+{
+	width: 100%;
+	height: 30%;
+}
+}
+
+@media only screen and (min-width: 769px)
+{
+body header img
+{
+	width: 100%;
+	height: 350px;
+}
+}

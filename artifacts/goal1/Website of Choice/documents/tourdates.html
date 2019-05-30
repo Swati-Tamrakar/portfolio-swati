@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Swati Tamrakar -->
+<html>
+<head>
+<meta charset= "utf-8">
+<meta name="keywords" content="Tamrakar, Swati, Ed, Sheeran, Divide, Plus, Multiply, Singer, Ginger, Songs, Songwrite, Tours"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href = "../styles/tourlayout.css" rel ="stylesheet"/>
+</head>
+<body>
+<header>
+<img src="../images/ed_header.jpg" alt = " Ed Sheeran" id = "headerimg" usemap = "#mymap"/>
+<map name="mymap" id="mymap" title = "Ed Sheeran">
+<area  coords="32,31,1166,336" href = "../index.html" alt="Album" />
+</map>
+<nav class ="links">
+<ul>
+<li><a href = "../index.html" >Home</a></li>
+<li><a href = "albums.html" >Albums</a></li>
+<li><a href = "photos.html" >Photos</a></li>
+<li><a href = "videos.html" >Videos</a></li>
+
+<li><a href = "follow.html">Follow</a></li>
+<li><a href = "tourdates.html">Tour Dates</a></li>
+</ul>
+</nav>
+</header>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Europe')" id="defaultOpen">Europe</button>
+  <button class="tablinks" onclick="openCity(event, 'North America')">North America</button>
+  <button class="tablinks" onclick="openCity(event, 'South America')">South America</button>
+  <button class="tablinks" onclick="openCity(event, 'Asia')">Asia</button>
+</div>
+<div id="Europe" class="tabcontent">
+  <h3>Europe 2018</h3>
+  <p><a href = "http://www.edsheeran.com/tour-date/p-irc-u-chaoimh-2018-05-04-070000">May 04 || Pairc Ui Chaoimh, Ireland</a><br><br>
+ <a href = "http://www.edsheeran.com/tour-date/boucher-playing-fields-2018-05-09-071500">May 09 || Boucher Playing Fields, Belfast, UK</a><br><br>
+<a href = "http://www.edsheeran.com/tour-date/pearse-stadium-2018-05-12-071500">May 12 || Pearse Stadium, Galway, Ireland</a><br><br>
+<a href = "http://www.edsheeran.com/tour-date/etihad-stadium-2018-05-24-073000">May 24 || Etihad Stadium, Manchester UK</a><br><br>
+<a href = "http://www.edsheeran.com/tour-date/hampden-park-2018-06-01-073000"> Jun 03 || Hampden Park Glasgow, UK</a> <br><br>
+<a href = "http://www.edsheeran.com/tour-date/amsterdam-arena-2018-06-29-071500">Jun 29 || Amsterdam Arena Amsterdam, The Netherlands</a><br><br>
+<a href = "http://www.edsheeran.com/tour-date/stade-de-france-2018-07-06-074500">Jul 06 || Stade De France,Paris, France</a><br><br>
+</p>
+
+</div>
+<div id="North America" class="tabcontent">
+  <h3>North America 2018</h3>
+  <p>
+  <a href = "http://www.edsheeran.com/tour-date/rose-bowl-stadium-2018-08-18-130000"> Aug 18 || Rose Bowl Stadium, Passadena CA</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/rogers-centre-2018-08-30-131500"> Aug 30 || Rogers Centre, Toronto, ON</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/busch-stadium-2018-09-06-131500"> Sep 06 || Busch Stadium, St. Louis, MO</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/gillette-stadium-2018-09-15-131500"> Sep 15 || Gilette Stadium, Foxboro, MA</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/metlife-stadium-2018-09-22-131500"> Sep 22 || MetLife Stadium, East Rutherford, NJ</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/arrowhead-stadium-2018-10-13-131500"> Oct 13 || Arrowhead Stadium, Kansas city, MO</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/minute-maid-park-2018-11-03-131500"> Nov 03 || Minute Maid Park, Houston, TX</a><br><br>
+</div>
+
+<div id="South America" class="tabcontent">
+  <h3>South America 2018</h3>
+  There are no shows scheduled as of now.
+</p> 
+</div>
+
+<div id="Asia" class="tabcontent">
+  <h3>Asia 2017</h3>
+  <p>
+  <a href = "http://www.edsheeran.com/tour-date/mall-asia-concert-grounds-2018-04-08-074500">Apr 08 || Mall of Asia Concert Grounds, Manila, Philippines</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/osaka-jo-hall-2018-04-11-071500">Apr 11 || Osaka-Jo Hall, Osaka, Japan</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/nippon-budokan-2018-04-13-073000">Apr 13 || Nippon Budokan, Tokyo, Japan</a><br><br>
+  <a href = "http://www.edsheeran.com/tour-date/nippon-budokan-2018-04-14-073000">Apr 14 || Nippon Budokan, Tokyo, Japan</a><br><br>
+  </p>
+</div>
+<section class = "sign">
+<b>Sign up to keep yourself up-to-date:</b><br>
+<br>
+<form action="#">
+  First name: &nbsp <input type="text" name="fname"><br><br>
+  Last name:&nbsp &nbsp <input type="text" name="lname"><br><br>
+  E-mail: &nbsp &nbsp &nbsp &nbsp &nbsp<input type="email" name="email" autocomplete="on"><br><br>
+  &nbsp &nbsp <input type="submit" type = "reset">
+</form>
+</section>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+<footer>
+   <span>
+ <nav><ul>For more info, visit: <a href= "http://www.edsheeran.com/?frontpage=true" " target="_blank"> Ed Sheeran</a>&nbsp &nbsp 
+  || &nbsp &nbsp Send E-mail to <a href="mailto:tamrakar407698@newmanu.edu?Subject=Hello%20again" target="_top"><i>Swati Tamrakar</i></a> for feedbacks.</ul></nav>
+ </span>
+ </footer>
+</html>
